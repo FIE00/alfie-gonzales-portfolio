@@ -371,6 +371,7 @@ function initializeCopyrightYear() {
 
 /* ===== CONTACT FORM ===== */
 
+
 function initializeContactForm() {
 
   const contactForm = document.getElementById("contact-form");
@@ -408,7 +409,6 @@ function initializeContactForm() {
         "Please complete all fields before submitting.";
 
       formMessage.classList.add("error");
-
       return;
 
     }
@@ -421,7 +421,6 @@ function initializeContactForm() {
         "Please enter a valid email address.";
 
       formMessage.classList.add("error");
-
       return;
 
     }
@@ -435,29 +434,33 @@ function initializeContactForm() {
 
     try {
 
-      // Send contact form data to Express backend
+      // Send contact form data to Web3Forms
       const response = await fetch(
-        "https://alfie-gonzales-portfolio.onrender.com/api/contact",
+        "https://api.web3forms.com/submit",
         {
           method: "POST",
 
           headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Accept": "application/json"
           },
 
           body: JSON.stringify({
+            access_key: "80377749-8f68-4e6a-af7c-3afc396f42fe",
+
             name: name,
             email: email,
             subject: subject,
             message: message,
-            website: website
+
+            botcheck: website
           })
         }
       );
 
       const result = await response.json();
 
-      if (!response.ok) {
+      if (!response.ok || !result.success) {
 
         throw new Error(
           result.message || "Unable to send your message."
@@ -465,9 +468,9 @@ function initializeContactForm() {
 
       }
 
-      // Successful email delivery
+      // Successful submission
       formMessage.textContent =
-        result.message || "Your message has been sent successfully!";
+        "Your message has been sent successfully!";
 
       formMessage.classList.add("success");
 
@@ -496,6 +499,7 @@ function initializeContactForm() {
   });
 
 }
+
 
 
 
