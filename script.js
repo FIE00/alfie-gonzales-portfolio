@@ -437,7 +437,7 @@ function initializeContactForm() {
 
       // Send contact form data to Express backend
       const response = await fetch(
-        "http://localhost:3000/api/contact",
+        "https://alfie-gonzales-portfolio.onrender.com/api/contact",
         {
           method: "POST",
 
