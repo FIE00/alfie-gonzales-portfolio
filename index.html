@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Welcome to the personal portfolio of Alfie Gonzales, an aspiring web developer.">
+  <meta name="theme-color" content="#080D1B">
+
+  <link rel="icon" type="image/png" href="images/LOGO F.png">
+
+  <title>Alfie Gonzales | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="landing-page">
+
+  <!-- ================= WELCOME / LANDING PAGE ================= -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <section id="welcome-screen">
+
+
+
+    <header class="landing-header">
+
+      <a href="#welcome-screen" class="landing-logo" aria-label="AG Home">
+        <span></span>
+      </a>
+
+      <span class="landing-header-text">
+        PERSONAL PORTFOLIO
+      </span>
+
+    </header>
+
+    <main class="landing-main">
+
+      <section class="landing-content">
+
+        <p class="landing-eyebrow">
+          <span class="status-dot"></span>
+          WELCOME TO MY DIGITAL SPACE
+        </p>
+
+        <h1>
+          Hello, I'm <span>Alfie Gonzales.</span>
+        </h1>
+
+        <h2>
+          Aspiring Web Developer
+        </h2>
+
+        <p class="landing-description">
+          I'm a Computer Science student passionate about
+          technology, programming, and creating modern
+          digital experiences.
+        </p>
+
+        <div class="landing-buttons">
+
+          <a href="#home" class="landing-btn primary-btn" id="enter-portfolio">
+            ENTER PORTFOLIO
+            <span aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contact" class="landing-btn secondary-btn" id="landing-contact">
+            GET IN TOUCH
+          </a>
+
+        </div>
+
+        <div class="landing-footer-text">
+          <span>DESIGNED & DEVELOPED BY ALFIE GONZALES</span>
+        </div>
+
+      </section>
+
+      <section class="landing-visual" aria-label="Animated interactive particle display">
+
+        <div class="visual-glow"></div>
+
+        <div class="visual-caption">
+          <span class="caption-line"></span>
+          <span>CREATIVITY MEETS TECHNOLOGY</span>
+        </div>
+
+      </section>
+
+    </main>
+
+  </section>
+
+
+  <!-- ================= MAIN PORTFOLIO ================= -->
+
+  <div id="main-portfolio" aria-hidden="true" inert>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="header" id="header">
+
+      <nav class="navbar container" aria-label="Main navigation">
+
+        <a href="#home" class="logo">
+          <span class="logo-bracket">&lt;</span>
+          MY PORTFOLIO
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu"
+          aria-expanded="false" aria-controls="nav-menu">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-cta">
+          Let's Talk <span>↗</span>
+        </a>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!-- ================= HOME / HERO ================= -->
+
+      <section class="hero section" id="home">
+
+        <div class="hero-glow"></div>
+
+        <div class="container hero-container">
+
+          <div class="hero-content reveal">
+
+            <span class="availability">
+              <span class="availability-dot"></span>
+              Available for opportunities
+            </span>
+
+            <p class="hero-greeting">HELLO, I'M</p>
+
+            <h1>ALFIE</h1>
+
+            <h2>
+              I'm a
+              <span class="typing-text" id="typing-text">Web Developer</span>
+              <span class="typing-cursor" aria-hidden="true">|</span>
+            </h2>
+
+            <p class="hero-description">
+              Passionate about technology, creative problem-solving,
+              and building meaningful digital experiences.
+              I turn ideas into functional and visually appealing solutions.
+            </p>
+
+            <div class="hero-buttons">
+
+              <a href="#contact" class="btn btn-primary">
+                Hire Me <span>↗</span>
+              </a>
+
+              <a href="#projects" class="btn btn-outline">
+                View Projects <span>→</span>
+              </a>
+
+            </div>
+
+            <div class="social-links">
+              <span>FOLLOW ME</span>
+
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GH</a>
+
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn profile">IN</a>
+
+              <a href="mailto:alfiegonzales777@gmail.com" aria-label="Send me an email">@</a>
+            </div>
+
+          </div>
+
+
+          <div class="hero-visual reveal">
+
+            <div class="hero-image-wrapper">
+
+              <div class="hero-image-decoration"></div>
+
+              <div class="code-window">
+
+                <div class="code-window-header">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <p>developer.js</p>
+                </div>
+
+                <div class="code-content">
+
+                  <p><span class="code-purple">const</span> developer = {</p>
+
+                  <p class="code-indent">
+                    name: <span class="code-green">'ALFIE'</span>,
+                  </p>
+
+                  <p class="code-indent">
+                    role: <span class="code-green">'WEB DEVELOPER'</span>,
+                  </p>
+
+                  <p class="code-indent">
+                    passion: <span class="code-green">'Creating'</span>,
+                  </p>
+
+                  <p class="code-indent">
+                    learning: <span class="code-purple">true</span>,
+                  </p>
+
+                  <p>};</p>
+                  <br>
+
+                  <p><span class="code-purple">console</span>.log(</p>
+
+                  <p class="code-indent">
+                    <span class="code-green">'Hello, Love!'</span>
+                  </p>
+
+                  <p>);</p>
+
+                </div>
+
+              </div>
+
+              <div class="floating-card floating-card-top">
+                <span>✦</span> Creative Mind
+              </div>
+
+              <div class="floating-card floating-card-bottom">
+                <span>✓</span> Always Learning
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+          <span></span>
+          Scroll to explore
+        </a>
+
+      </section>
+
+
+      <!-- ================= ABOUT ================= -->
+
+      <section class="section about-section" id="about">
+
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <span class="section-label">GET TO KNOW ME</span>
+            <h2>About <span>Me</span></h2>
+            <p>A little introduction about who I am and what I do.</p>
+          </div>
+
+          <div class="about-grid">
+
+            <div class="about-image-area reveal">
+
+              <div class="about-image-frame">
+                <img src="images/profile.png.png" alt="Profile photo of Alfie Gonzales" class="profile-image"
+                  loading="lazy">
+
+                <div class="image-corner"></div>
+              </div>
+
+              <div class="experience-badge">
+                <strong>01+</strong>
+                <span>Years of<br>Learning</span>
+              </div>
+
+            </div>
+
+
+            <div class="about-content reveal">
+
+              <span class="about-subtitle">WHO I AM</span>
+
+              <h3>
+                Building my future through
+                <span>technology and creativity.</span>
+              </h3>
+
+              <p>
+                I am a Computer Science student and aspiring web developer
+                who enjoys learning programming and exploring technology.
+              </p>
+
+              <p>
+                I enjoy exploring new technologies, improving my
+                programming skills, and creating projects that
+                solve real-world problems. I believe that continuous
+                learning and dedication are essential to becoming
+                a better developer.
+              </p>
+
+              <div class="about-facts">
+
+                <div class="fact-item">
+                  <span>Name</span>
+                  <strong>ALFIE GONZALES</strong>
+                </div>
+
+                <div class="fact-item">
+                  <span>Profession</span>
+                  <strong>COMPUTER SCIENCE STUDENT</strong>
+                </div>
+
+                <div class="fact-item">
+                  <span>Email</span>
+                  <strong>alfiegonzales777@gmail.com</strong>
+                </div>
+
+                <div class="fact-item">
+                  <span>Location</span>
+                  <strong>DASMARIÑAS CAVITE, PHILIPPINES</strong>
+                </div>
+
+              </div>
+
+              <a href="#contact" class="btn btn-primary">
+                Get In Touch <span>↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= SKILLS ================= -->
+
+      <section class="section skills-section" id="skills">
+
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <span class="section-label">MY EXPERTISE</span>
+            <h2>Skills & <span>Technologies</span></h2>
+            <p>Technologies and tools I use to bring ideas to life.</p>
+          </div>
+
+          <div class="skills-grid">
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">01</div>
+              <h3>Front-End Development</h3>
+              <p>Building responsive and user-friendly websites.</p>
+
+              <div class="skill-list">
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>HTML5</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span style="--progress: 90%"></span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>CSS3</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span style="--progress: 80%"></span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>JavaScript</span>
+                    <span>65%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span style="--progress: 65%"></span>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">02</div>
+              <h3>Programming</h3>
+              <p>Developing logical solutions through programming.</p>
+
+              <div class="skill-list">
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Python</span>
+                    <span>65%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span style="--progress: 65%"></span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Java</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span style="--progress: 70%"></span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>C / C++</span>
+                    <span>50%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span style="--progress: 50%"></span>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">03</div>
+              <h3>Database & Tools</h3>
+              <p>Managing information and development workflows.</p>
+
+              <div class="skill-list">
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>MySQL</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span style="--progress: 70%"></span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Git & GitHub</span>
+                    <span>65%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span style="--progress: 65%"></span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>VS Code</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span style="--progress: 85%"></span>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+
+          </div>
+
+          <p class="skills-note reveal">
+            ✦ So far this is my skill set. Still continue on growing
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= EXPERIENCE ================= -->
+
+      <section class="section experience-section" id="experience">
+
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <span class="section-label">MY JOURNEY</span>
+            <h2>Experience & <span>Activities</span></h2>
+            <p>My professional experience, volunteer work, and activities.</p>
+          </div>
+
+          <div class="timeline">
+
+            <article class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <span class="timeline-date">2026 - PRESENT</span>
+                <h3>[VICE PRESIDENT]</h3>
+                <h4>[NON GOVERNMENT ORGANIZATION]</h4>
+                <p>
+                  [MY EXPERIENCE] - I currently serve as the Vice President of a non-government organization,
+                  where I lead initiatives, manage projects, and collaborate with team members to achieve our goals.
+                  This role has strengthened my leadership and organizational skills.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <span class="timeline-date">2025 - 2025</span>
+                <h3>[PUBLIC INFORMATION OFFICER]</h3>
+                <h4>[NON GOVERNMENT ORGANIZATION]</h4>
+                <p>
+                  [MY EXPERIENCE] - I worked as a Public Information Officer for a non-government organization,
+                  where I was responsible for managing communication and public relations. This role allowed me to
+                  develop strong communication skills and gain experience in media relations.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <span class="timeline-date">2022 - 2023</span>
+                <h3>[DATA ENCODER]</h3>
+                <h4>[LOCAL BARANGAY]</h4>
+                <p>
+                  [MY EXPERIENCE] - I worked as a Data Encoder for a local
+                  barangay, where I was responsible for accurately inputting
+                  and managing data records. This role enhanced my attention
+                  to detail and data management skills.
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= PROJECTS ================= -->
+
+      <section class="section projects-section" id="projects">
+
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <span class="section-label">MY RECENT WORK</span>
+            <h2>Featured <span>Projects</span></h2>
+            <p>
+              A collection of projects that showcase my skills
+              and creativity.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+
+            <!-- PROJECT 1 -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img src="images/Project1.png" alt="Project 1 screenshot" loading="lazy">
+                <button type="button" class="project-preview-trigger" data-project-preview>
+                  View Project Details
+                </button>
+                <span class="project-number">PROJECT 01</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category">SOFTWARE DEVELOPMENT</span>
+                <h3>[SIMPLE POS SYSTEM]</h3>
+                <p>
+                  [MY PROJECTS] - This app is created by applying OOP
+                  concepts in Java. It is a simple POS system that
+                  allows users to manage products, add items to a cart,
+                  and generate receipts.
+                </p>
+
+                <div class="project-tags">
+                  <span>Java</span>
+                  <span>OOP</span>
+                  <span>SQL</span>
+                </div>
+
+                <div class="project-links">
+                  <button type="button" class="project-link project-preview-button" data-project-preview>
+                    View Details
+                  </button>
+
+                  <a href="https://github.com/FIE00" class="project-link" target="_blank"
+                    rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+
+            <!-- PROJECT 2 -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img src="images/Project2.png" alt="Project 2 screenshot" loading="lazy">
+                <button type="button" class="project-preview-trigger" data-project-preview>
+                  View Project Details
+                </button>
+                <span class="project-number">PROJECT 02</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category">WEB DEVELOPMENT</span>
+                <h3>[PATIENT 360 VIEW]</h3>
+                <p>
+                  [MY PROJECTS] - This web application is designed to provide
+                  a comprehensive view of patient information. It allows
+                  healthcare professionals to access patient records,
+                  medical history, and other relevant data in a user-friendly
+                  interface.
+
+                </p>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                  <button type="button" class="project-link project-preview-button" data-project-preview>
+                    View Details
+                  </button>
+
+                  <a href="https://github.com/FIE00" class="project-link" target="_blank"
+                    rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+
+            <!-- PROJECT 3 -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img src="images/Project3.png" alt="Project 3 screenshot" loading="lazy">
+                <button type="button" class="project-preview-trigger" data-project-preview>
+                  View Project Details
+                </button>
+                <span class="project-number">PROJECT 03</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category">WEB DEVELOPMENT</span>
+                <h3>[KABSU-CART]</h3>
+                <p>
+                  [MY PROJECTS] - This web application is a simple e-commerce
+                  platform that allows users to browse products, add items
+                  to a shopping cart, and proceed to checkout. It demonstrates
+                  the use of HTML, CSS, and JavaScript for building interactive web apps.
+                </p>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                  <button type="button" class="project-link project-preview-button" data-project-preview>
+                    View Details
+                  </button>
+
+                  <a href="https://github.com/FIE00" class="project-link" target="_blank"
+                    rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+
+            <!-- PROJECT 4 -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img src="images/Project4.png" alt="Project 4 screenshot" loading="lazy">
+                <button type="button" class="project-preview-trigger" data-project-preview>
+                  View Project Details
+                </button>
+                <span class="project-number">PROJECT 04</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category">WEB DEVELOPMENT</span>
+                <h3>[STATS AND ACHIEVEMENT HUB]</h3>
+                <p>
+                  [MY PROJECTS] - This web application is designed to provide
+                  users with a centralized hub for tracking and displaying
+                  their statistics and achievements. It allows users to view
+                  their progress, set goals, and celebrate accomplishments
+                  in a visually appealing interface.
+                </p>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                  <button type="button" class="project-link project-preview-button" data-project-preview>
+                    View Details
+                  </button>
+
+                  <a href="https://github.com/FIE00" class="project-link" target="_blank"
+                    rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+
+            <!-- PROJECT 5 -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img src="images/Project5.png" alt="Project 5 screenshot" loading="lazy">
+                <button type="button" class="project-preview-trigger" data-project-preview>
+                  View Project Details
+                </button>
+                <span class="project-number">PROJECT 05</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category">APPLICATION DEVELOPMENT</span>
+                <h3>[ROCK PAPER SCISSORS]</h3>
+                <p>
+                  [MY PROJECTS] - This is a classic implementation of the Rock, Paper, Scissors game built with HTML,
+                  CSS, and
+                  JavaScript. It provides a simple yet engaging user interface for playing the game against the
+                  computer.
+                </p>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                  <button type="button" class="project-link project-preview-button" data-project-preview>
+                    View Details
+                  </button>
+
+                  <a href="https://github.com/FIE00" class="project-link" target="_blank"
+                    rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+
+            <!-- PROJECT 6 -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img src="images/Project6.png" alt="Project 6 screenshot" loading="lazy">
+                <button type="button" class="project-preview-trigger" data-project-preview>
+                  View Project Details
+                </button>
+                <span class="project-number">PROJECT 06</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category">ORGANIZATION WEBSITE</span>
+                <h3>[SIMPLE TO-DO LIST]</h3>
+                <p>
+                  [MY PROJECTS] - This is a straightforward to-do list application built with HTML, CSS, and
+                  JavaScript. It allows users to create, manage, and track their daily tasks in a clean and intuitive
+                  interface.
+                </p>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                  <button type="button" class="project-link project-preview-button" data-project-preview>
+                    View Details
+                  </button>
+
+                  <a href="https://github.com/FIE00" class="project-link" target="_blank"
+                    rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+
+            <!-- PROJECT 7 -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img src="images/Project7.png" alt="Project 7 screenshot" loading="lazy">
+                <button type="button" class="project-preview-trigger" data-project-preview>
+                  View Project Details
+                </button>
+                <span class="project-number">PROJECT 07</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category">PERSONAL PROJECT</span>
+                <h3>[SIMPLE CALCULATOR]</h3>
+                <p>
+                  [MY PROJECTS] - This is a simple calculator application built using HTML, CSS, and
+                  JavaScript. It provides basic arithmetic operations in a user-friendly interface, allowing users to
+                  perform
+                  calculations easily.
+                </p>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                  <button type="button" class="project-link project-preview-button" data-project-preview>
+                    View Details
+                  </button>
+
+                  <a href="https://github.com/FIE00" class="project-link" target="_blank"
+                    rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+
+            <!-- PROJECT 8 -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img src="images/Project8.png" alt="Project 8 screenshot" loading="lazy">
+                <button type="button" class="project-preview-trigger" data-project-preview>
+                  View Project Details
+                </button>
+                <span class="project-number">PROJECT 08</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category">UPCOMING PROJECT</span>
+                <h3>[RESPONSIVE PORTFOLIO]</h3>
+                <p>
+                  [MY PROJECTS] - This is a responsive personal portfolio website built with HTML, CSS, and
+                  JavaScript. It showcases my skills, projects, and experiences in a visually appealing and
+                  user-friendly manner.
+                </p>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                  <button type="button" class="project-link project-preview-button" data-project-preview>
+                    View Details
+                  </button>
+
+                  <a href="https://github.com/FIE00" class="project-link" target="_blank"
+                    rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= EDUCATION ================= -->
+
+      <section class="section education-section" id="education">
+
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <span class="section-label">ACADEMIC BACKGROUND</span>
+            <h2>My <span>Education</span></h2>
+            <p>My educational background and academic journey.</p>
+          </div>
+
+          <div class="education-grid">
+
+            <article class="education-card reveal">
+              <div class="education-icon">01</div>
+              <span class="education-date">2026 - PRESENT</span>
+              <h3>[BACHELOR OF SCIENCE IN COMPUTER SCIENCE]</h3>
+              <h4>[CAVITE STATE UNIVERSITY BACOOR CAMPUS]</h4>
+              <p>
+                I am a Computer Science student at Cavite State University Bacoor Campus, where I am currently pursuing
+                my degree. My studies focus on programming, software development, and computer systems, providing me
+                with a strong foundation in technology and problem-solving skills.
+              </p>
+            </article>
+
+            <article class="education-card reveal">
+              <div class="education-icon">02</div>
+              <span class="education-date">2022 - 2023</span>
+              <h3>[SENIOR HIGH SCHOOL TVL-ICT]</h3>
+              <h4>[SENIOR HIGHSCHOOL IN PROGRESSIVE]</h4>
+              <p>
+                I finish the TVL-ICT strand specialize in Networking and maintaining The Hardware and software of the
+                computer. I learned how to troubleshoot and fix computer issues, as well as how to set up and manage
+                networks. This experience has given me practical skills that I can apply in my future career.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= CERTIFICATIONS ================= -->
+
+      <section class="section certifications-section" id="certifications">
+
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <span class="section-label">PROFESSIONAL DEVELOPMENT</span>
+            <h2>Certificates & <span>Achievements</span></h2>
+            <p>
+              Trainings, certifications, and achievements
+              that represent my continuous learning.
+            </p>
+          </div>
+
+          <div class="certifications-grid">
+
+            <!-- CERTIFICATE 1 -->
+            <article class="certification-card reveal">
+
+              <div class="certification-image">
+                <button type="button" class="certificate-preview-trigger" data-certificate-preview
+                  aria-label="View Certificate 1">
+
+                  <img src="images/Cert1.png" alt="Certificate 1" loading="lazy">
+
+                  <span class="certificate-view-overlay">
+                    View Certificate ↗
+                  </span>
+
+                </button>
+              </div>
+
+              <div class="certification-content">
+                <span class="certification-label">CERTIFICATE 01</span>
+                <h3>[CERTIFICATE OF APPRECIATION]</h3>
+                <p>[RED CROSS YOUTH BACOOR-CAMPUS]</p>
+                <span class="certification-year">[2025]</span>
+              </div>
+
+            </article>
+
+
+            <!-- CERTIFICATE 2 -->
+            <article class="certification-card reveal">
+
+              <div class="certification-image">
+                <button type="button" class="certificate-preview-trigger" data-certificate-preview
+                  aria-label="View Certificate 2">
+
+                  <img src="images/Cert2.png" alt="Certificate 2" loading="lazy">
+
+                  <span class="certificate-view-overlay">
+                    View Certificate ↗
+                  </span>
+
+                </button>
+              </div>
+
+              <div class="certification-content">
+                <span class="certification-label">CERTIFICATE 02</span>
+                <h3>[CERTIFICATE OF APPRECIATION]</h3>
+                <p>[RED CROSS YOUTH BACOOR-CAMPUS]</p>
+                <span class="certification-year">[2026]</span>
+              </div>
+
+            </article>
+
+
+            <!-- CERTIFICATE 3 -->
+            <article class="certification-card reveal">
+
+              <div class="certification-image">
+                <button type="button" class="certificate-preview-trigger" data-certificate-preview
+                  aria-label="View Certificate 3">
+
+                  <img src="images/Cert3.jpg" alt="Certificate 3" loading="lazy">
+
+                  <span class="certificate-view-overlay">
+                    View Certificate ↗
+                  </span>
+
+                </button>
+              </div>
+
+              <div class="certification-content">
+                <span class="certification-label">CERTIFICATE 03</span>
+                <h3>[SPECIAL AWARD]</h3>
+                <p>[ACS - ALLIANCE OF COMPUTER SCIENCE]</p>
+                <span class="certification-year">[2026]</span>
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= SERVICES ================= -->
+
+      <section class="section services-section" id="services">
+
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <span class="section-label">WHAT I CAN DO</span>
+            <h2>My <span>Services</span></h2>
+            <p>
+              Services I can offer through my technical
+              knowledge and creative skills.
+            </p>
+          </div>
+
+          <div class="services-grid">
+
+            <article class="service-card reveal">
+              <div class="service-icon">01</div>
+              <h3>Web Development</h3>
+              <p>
+                Creating responsive, accessible, and
+                user-friendly websites using modern
+                front-end technologies.
+              </p>
+              <a href="#contact" class="service-link">
+                Discuss a project <span>↗</span>
+              </a>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon">02</div>
+              <h3>UI/UX Design</h3>
+              <p>
+                Designing clean, visually appealing,
+                and intuitive interfaces focused
+                on a better user experience.
+              </p>
+              <a href="#contact" class="service-link">
+                Discuss a project <span>↗</span>
+              </a>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon">03</div>
+              <h3>Application Development</h3>
+              <p>
+                Developing simple and functional
+                applications that help users
+                accomplish everyday tasks.
+              </p>
+              <a href="#contact" class="service-link">
+                Discuss a project <span>↗</span>
+              </a>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon">04</div>
+              <h3>Website Maintenance</h3>
+              <p>
+                Updating website content, fixing
+                front-end issues, and improving
+                website usability.
+              </p>
+              <a href="#contact" class="service-link">
+                Discuss a project <span>↗</span>
+              </a>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= CONTACT ================= -->
+
+
+      <section class="section contact-section" id="contact">
+
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <span class="section-label">LET'S CONNECT</span>
+            <h2>Get In <span>Touch</span></h2>
+            <p>
+              Have a project in mind or an opportunity to discuss?
+              Feel free to reach out.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+
+            <div class="contact-information reveal">
+
+              <h3>Let's work together.</h3>
+
+              <p>
+                I'm always interested in discussing new projects,
+                creative ideas, and opportunities to grow.
+              </p>
+
+              <!-- EMAIL -->
+              <div class="contact-detail">
+                <div class="contact-icon">@</div>
+                <div>
+                  <span>Email Address</span>
+                  <a href="mailto:alfiegonzales777@gmail.com">
+                    alfiegonzales777@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- GITHUB -->
+              <div class="contact-detail">
+                <div class="contact-icon">GH</div>
+                <div>
+                  <span>GitHub</span>
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    Visit my GitHub
+                  </a>
+                </div>
+              </div>
+
+              <!-- LOCATION -->
+              <div class="contact-detail">
+                <div class="contact-icon">⌖</div>
+                <div>
+                  <span>Location</span>
+                  <strong>Dasmariñas, Cavite, Philippines</strong>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- CONTACT FORM -->
+            <form class="contact-form reveal" id="contact-form">
+
+              <!-- Honeypot spam protection -->
+              <div class="honeypot-field" aria-hidden="true">
+                <label for="contact-website">Leave this field empty</label>
+                <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form-row">
+
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Enter your name" autocomplete="name"
+                    required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Your Email</label>
+                  <input type="email" id="contact-email" name="email" placeholder="Enter your email"
+                    autocomplete="email" required>
+                </div>
+
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="What is this about?" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" name="message" rows="6" placeholder="Write your message here..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-button">
+                Send Message <span>↗</span>
+              </button>
+
+              <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+
+              <p class="form-note">
+                Your message will be sent securely through this contact form.
+                I'll get back to you as soon as possible.
+              </p>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+      <div class="container">
+
+        <div class="footer-top">
+
+          <a href="#home" class="logo footer-logo">
+            <span class="logo-bracket">&lt;</span>
+            ALFIE GONZALES
+            <span class="logo-bracket">/&gt;</span>
+          </a>
+
+          <p>Creating, learning, and growing one project at a time.</p>
+
+          <a href="#home" class="back-to-top" aria-label="Back to top">
+            ↑
+          </a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+          <p>
+            © <span id="current-year"></span> ALFIE GONZALES.
+            All rights reserved.
+          </p>
+
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+
+    <!-- ================= PROJECT PREVIEW MODAL ================= -->
+
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+
+      <div class="project-modal-backdrop" data-modal-close></div>
+
+      <section class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title"
+        aria-describedby="project-modal-description" tabindex="-1">
+
+        <button type="button" class="project-modal-close" id="project-modal-close" aria-label="Close project details">
+          &times;
+        </button>
+
+        <div class="project-modal-image-wrap">
+          <img id="project-modal-image" src="" alt="">
+        </div>
+
+        <div class="project-modal-content">
+
+          <span class="project-category" id="project-modal-category"></span>
+
+          <h2 id="project-modal-title">Project title</h2>
+
+          <p id="project-modal-description"></p>
+
+          <div class="project-tags" id="project-modal-tags" aria-label="Technologies used"></div>
+
+          <div class="project-modal-links" id="project-modal-links">
+
+            <a id="project-modal-demo" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
+              Live Demo ↗
+            </a>
+
+            <a id="project-modal-github" class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">
+              GitHub ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <!-- ================= CERTIFICATE PREVIEW MODAL ================= -->
+
+    <div class="certificate-modal" id="certificate-modal" aria-hidden="true">
+
+      <div class="certificate-modal-backdrop" data-certificate-close></div>
+
+      <section class="certificate-modal-dialog" role="dialog" aria-modal="true"
+        aria-labelledby="certificate-modal-title" tabindex="-1">
+
+        <button type="button" class="certificate-modal-close" id="certificate-modal-close"
+          aria-label="Close certificate preview">
+          &times;
+        </button>
+
+        <div class="certificate-modal-content">
+
+          <div class="certificate-modal-image">
+            <img id="certificate-modal-img" src="" alt="Certificate preview">
+          </div>
+
+          <div class="certificate-modal-details">
+
+            <span class="certification-label">
+              CERTIFICATE PREVIEW
+            </span>
+
+            <h2 id="certificate-modal-title">
+              Certificate Title
+            </h2>
+
+            <p id="certificate-modal-organization">
+              Issuing Organization
+            </p>
+
+            <span id="certificate-modal-year" class="certification-year">
+              Year
+            </span>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
