@@ -29,12 +29,19 @@ if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
 app.use(express.json({ limit: "10kb" }));
 
 // Allow local VS Code Live Server
+// Allowed frontend origins
 const allowedOrigins = [
   "http://127.0.0.1:5500",
   "http://localhost:5500",
   "http://127.0.0.1:5501",
-  "http://localhost:5501"
+  "http://localhost:5501",
+
+  // Production frontend
+  "https://alfie-gonzales-portfolio.netlify.app"
 ];
+
+// Enable CORS
+app.use(cors({ origin: allowedOrigins }));
 
 app.use(cors({
   origin: allowedOrigins
