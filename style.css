@@ -826,7 +826,7 @@ textarea:focus-visible {
 }
 
 
-/* ===== SKILLS ===== */
+/* ===== SKILLS SECTION ===== */
 
 .skills-grid {
   display: grid;
@@ -838,9 +838,7 @@ textarea:focus-visible {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-
   padding: 30px;
-
   transition: var(--transition);
 }
 
@@ -882,22 +880,71 @@ textarea:focus-visible {
   margin-bottom: 25px;
 }
 
-.skill-list {
+/* TECHNOLOGY LOGOS */
+
+.skill-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.skill-card:nth-child(2) .skill-tech-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 220px;
+  margin-inline: auto;
+}
+
+.skill-tech {
+  min-width: 0;
+  min-height: 115px;
+
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 15px 8px;
+
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  text-align: center;
+
+  transition: var(--transition);
 }
 
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-  font-size: 12px;
+.skill-tech:hover {
+  transform: translateY(-5px);
+  background: rgba(99, 102, 241, 0.08);
+  border-color: var(--accent);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.12);
+}
+
+.skill-tech img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+
+  transition: var(--transition);
+}
+
+.skill-tech:hover img {
+  transform: scale(1.08);
+}
+
+.skill-tech span {
+  font-size: 11px;
   font-weight: 600;
+  color: var(--text-secondary);
 }
 
-.skill-info span:last-child {
-  color: var(--accent-light);
+.skills-note {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-top: 35px;
 }
 
 .skill-bar {
@@ -1104,14 +1151,23 @@ textarea:focus-visible {
 }
 
 .project-tags span {
-  padding: 5px 10px;
+  padding: 6px 11px;
 
   background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.18);
+
   color: var(--accent-light);
 
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 10px;
   font-weight: 700;
+
+  transition: var(--transition);
+}
+
+.project-tags span:hover {
+  background: rgba(99, 102, 241, 0.18);
+  border-color: rgba(99, 102, 241, 0.45);
 }
 
 .project-links {
