@@ -971,6 +971,263 @@ textarea:focus-visible {
 }
 
 
+/* =========================================
+   AI TOOLS INFINITE CAROUSEL
+========================================= */
+
+.ai-tools-section {
+  margin-top: 65px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* HEADING */
+
+.ai-tools-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.ai-tools-heading h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: var(--text-primary);
+}
+
+.ai-tools-heading h3 span {
+  color: var(--accent-light);
+}
+
+.ai-tools-heading p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* CAROUSEL VIEWPORT */
+
+.ai-tools-carousel {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 12px;
+  margin-top: -12px;
+
+  -webkit-mask-image: linear-gradient(to right,
+      transparent,
+      black 7%,
+      black 93%,
+      transparent);
+
+  mask-image: linear-gradient(to right,
+      transparent,
+      black 7%,
+      black 93%,
+      transparent);
+}
+
+/* ANIMATED TRACK */
+
+.ai-tools-track {
+  display: flex;
+  width: max-content;
+
+  animation: ai-tools-scroll 40s linear infinite;
+
+  will-change: transform;
+}
+
+/* TOOL GROUPS */
+
+.ai-tools-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  flex-shrink: 0;
+  padding-right: 20px;
+}
+
+/* INDIVIDUAL CARDS */
+
+.ai-tool-card {
+  width: 155px;
+  min-height: 125px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+
+  padding: 18px 14px;
+
+  flex-shrink: 0;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+/* CARD HOVER */
+
+.ai-tool-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(99, 102, 241, 0.65);
+
+  background: rgba(99, 102, 241, 0.07);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.15),
+    0 0 20px rgba(99, 102, 241, 0.10);
+}
+
+/* TOOL LOGOS */
+
+.ai-tool-card img {
+  width: 43px;
+  height: 43px;
+
+  object-fit: contain;
+
+  transition: transform 0.3s ease;
+}
+
+.ai-tool-card:hover img {
+  transform: scale(1.12);
+}
+
+/* TOOL NAMES */
+
+.ai-tool-card span {
+  color: var(--text-secondary);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* INFINITE SCROLL ANIMATION */
+
+@keyframes ai-tools-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* PAUSE WHEN HOVERED */
+
+.ai-tools-carousel:hover .ai-tools-track {
+  animation-play-state: paused;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .ai-tools-section {
+    margin-top: 55px;
+  }
+
+  .ai-tools-group {
+    gap: 16px;
+    padding-right: 16px;
+  }
+
+  .ai-tool-card {
+    width: 145px;
+    min-height: 115px;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .ai-tools-section {
+    margin-top: 45px;
+  }
+
+  .ai-tools-heading {
+    margin-bottom: 25px;
+  }
+
+  .ai-tools-heading h3 {
+    font-size: 22px;
+  }
+
+  .ai-tools-heading p {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .ai-tools-group {
+    gap: 13px;
+    padding-right: 13px;
+  }
+
+  .ai-tool-card {
+    width: 125px;
+    min-height: 105px;
+
+    padding: 14px 10px;
+    border-radius: 13px;
+  }
+
+  .ai-tool-card img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .ai-tool-card span {
+    font-size: 10px;
+  }
+
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .ai-tools-track {
+    animation: none;
+    transform: none;
+    will-change: auto;
+  }
+
+  .ai-tools-carousel {
+    overflow-x: auto;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .ai-tools-group[aria-hidden="true"] {
+    display: none;
+  }
+
+  .ai-tool-card,
+  .ai-tool-card img {
+    transition: none;
+  }
+
+}
+
+
 /* ===== EXPERIENCE TIMELINE ===== */
 
 .experience-section {
